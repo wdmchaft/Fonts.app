@@ -16,7 +16,7 @@
 
 - (NSArray *)fontFamilies {
 	if (fontFamilies == nil) {
-		fontFamilies = [UIFont fontNamesForFamilyName:fontName];
+		fontFamilies = [[UIFont fontNamesForFamilyName:fontName] retain];
 	}
 	return fontFamilies;
 }
